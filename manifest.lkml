@@ -1,4 +1,4 @@
-project_name: "vivense"
+project_name: "vestel_nova"
 
 # # Use local_dependency: To enable referencing of another project
 # # on this instance with include: statements
