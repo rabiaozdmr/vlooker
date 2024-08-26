@@ -25,6 +25,8 @@ persist_with: vestel_nova_default_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
+
+# Create a single explore by joining three views based on country_code with FULL OUTER JOIN
 explore: device_error_counts {}
 
 explore: ac_set_temperature {}
