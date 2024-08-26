@@ -7,9 +7,9 @@ view: tv_app_time_spent {
   # No primary key is defined for this view. In order to join this view in an Explore,
   # define primary_key: yes on a dimension that has no repeated values.
 
-    # Here's what a typical dimension looks like in LookML.
-    # A dimension is a groupable field that can be used to filter query results.
-    # This dimension will be called "Age 15 25" in Explore.
+  # Here's what a typical dimension looks like in LookML.
+  # A dimension is a groupable field that can be used to filter query results.
+  # This dimension will be called "Age 15 25" in Explore.
 
   dimension: age_15_25 {
     type: number
@@ -94,10 +94,10 @@ view: tv_app_time_spent {
   measure: sum_time_spent {
     type: sum
     sql: ${TABLE}.time_spent ;;
-   }
-    measure: time_spent_m {
-      type: count_distinct
-      sql: ${TABLE}.time_spent ;;
-    }
+  }
+  measure: time_spent_m {
+    type: count_distinct
+    sql: ${TABLE}.time_spent ;;
+  }
 
 }
