@@ -43,6 +43,8 @@ explore: ac_duration {}
 
 explore: devices {}
 
+explore: tables {}
+
 explore: rf_door_open {}
 
 explore: tv_app_time_spent {}
