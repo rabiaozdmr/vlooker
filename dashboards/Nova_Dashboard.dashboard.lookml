@@ -5,6 +5,7 @@
   preferred_viewer: dashboards-next
   crossfilter_enabled: true
   description: ''
+  background_color: "#F6F6F8"
   preferred_slug: bcln7QCImCGDmYPFi27mwa
   elements:
   - title: Countries
