@@ -12,6 +12,9 @@
     name: Countries
     model: vestel_nova
     explore: tables
+    background_color: "#FFFFFF"
+    inner_background_color: "#F9F9F9"
+    border_radius: 20
     type: looker_wordcloud
     fields: [tables.country, tables.count]
     filters:
@@ -256,6 +259,9 @@
     name: Channel Watch Time by Brand
     model: vestel_nova
     explore: tables
+    background_color: "#FFFFFF"
+    inner_background_color: "#F9F9F9"
+    border_radius: 20
     type: looker_pie
     fields: [tables.brand, tables.sum_time_spent]
     filters:
