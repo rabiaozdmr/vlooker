@@ -28,6 +28,7 @@ view: devices {
   measure: total_count_devices {
     type: sum
     sql: ${count_devices} ;;  }
+
   measure: average_count_devices {
     type: average
     sql: ${count_devices} ;;  }

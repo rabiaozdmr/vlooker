@@ -46,13 +46,18 @@ view: tables {
     sql: ${TABLE}.brand ;;
   }
 
+  dimension: count_devices {
+    type: number
+    sql: ${TABLE}.count ;;
+  }
+
   dimension: channel_name {
     type: string
     sql: ${TABLE}.channel_name ;;
   }
 
   dimension: click_count {
-    type: string
+    type: number
     sql: ${TABLE}.click_count ;;
   }
 
@@ -70,6 +75,12 @@ view: tables {
   dimension: country_code {
     type: string
     sql: ${TABLE}.country_code ;;
+  }
+
+  dimension: location {
+    type: location
+    sql_latitude:${TABLE}.Latitude ;;
+    sql_longitude:${TABLE}.Longitude ;;
   }
   # Dates and timestamps can be represented in Looker using a dimension group of type: time.
   # Looker converts dates and timestamps to the specified timeframes within the dimension group.
@@ -99,6 +110,7 @@ view: tables {
   measure: total_duration {
     type: sum
     sql: ${duration} ;;  }
+
   measure: average_duration {
     type: average
     sql: ${duration} ;;  }
@@ -171,4 +183,52 @@ view: tables {
     type: count
     drill_fields: [channel_name, app_name]
   }
+  measure: total_usage_count {
+    type: sum
+    sql: ${usage_count} ;;  }
+
+  measure: total_count_devices {
+    type: sum
+    sql: ${TABLE}.count ;;  }
+
+  measure: click_count_sum {
+    type: sum
+    sql: ${TABLE}.click_count ;;
+  }
+
+  measure: sum_time_spent {
+    type: sum
+    sql: ${TABLE}.time_spent ;;
+  }
+
+  measure: brand_count {
+    type: count_distinct
+    sql: ${TABLE}.brand;;
+  }
+  dimension: count_ac_set_temperature {
+    type: number
+    sql: ${TABLE}.count ;;
+  }
+
+  measure: total_count_ac_set_temperature {
+    type: sum
+    sql: ${count_ac_set_temperature} ;;  }
+
+  dimension: count_oven_daily_program_usage {
+    type: number
+    sql: ${TABLE}.count ;;
+  }
+
+  measure: total_count_oven_daily_program_usage {
+    type: sum
+    sql: ${count_oven_daily_program_usage} ;;  }
+
+
+  measure: total_error_count {
+    type: sum
+    sql: ${error_count} ;;  }
+
+  measure: total_energy {
+    type: sum
+    sql: ${energy} ;;  }
 }

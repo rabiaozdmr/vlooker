@@ -28,6 +28,7 @@ view: oven_daily_program_usage {
   measure: total_count_oven_daily_program_usage {
     type: sum
     sql: ${count_oven_daily_program_usage} ;;  }
+
   measure: average_count_oven_daily_program_usage {
     type: average
     sql: ${count_oven_daily_program_usage} ;;  }

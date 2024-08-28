@@ -28,6 +28,7 @@ view: ac_set_temperature {
   measure: total_count_ac_set_temperature {
     type: sum
     sql: ${count_ac_set_temperature} ;;  }
+
   measure: average_count_ac_set_temperature {
     type: average
     sql: ${count_ac_set_temperature} ;;  }
