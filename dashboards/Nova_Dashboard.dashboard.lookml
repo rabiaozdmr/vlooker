@@ -259,7 +259,7 @@
     name: Channel Watch Time by Brand
     model: vestel_nova
     explore: tables
-    background_color: "#FFFFFF"
+    background_color: "#000000"
     inner_background_color: "#F9F9F9"
     border_radius: 20
     type: looker_pie
