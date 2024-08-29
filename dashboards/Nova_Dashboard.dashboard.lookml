@@ -3,10 +3,18 @@
   title: Nova Dashboard
   layout: newspaper
   preferred_viewer: dashboards-next
+- theme:
+  name: "Custom Dark Mode"
+  settings:
+  background_color: "#232323"  # Arka plan rengini koyu yapar
+  text_color: "#FFFFFF"        # Metin rengini beyaz yapar
+  font:
+  family: "League Spartan"
+  style: "Regular"
+  color: "#FFFFFF"
   crossfilter_enabled: true
   description: ''
-  background_color: "#F6F6F8"
-  preferred_slug: bcln7QCImCGDmYPFi27mwa
+  referred_slug: bcln7QCImCGDmYPFi27mwa
   elements:
   - title: Countries
     name: Countries
