@@ -70,8 +70,8 @@ view: tables {
     type: string
     map_layer_name: countries
     sql: CASE
-         WHEN ${TABLE}.country != 'unknown' THEN ${TABLE}.country
-         ELSE NULL
+         WHEN ${TABLE}.country = 'unknown' THEN NULL
+         ELSE ${TABLE}.country
        END ;;
   }
 
