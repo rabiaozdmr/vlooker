@@ -69,7 +69,10 @@ view: tables {
   dimension: country {
     type: string
     map_layer_name: countries
-    sql: ${TABLE}.country ;;
+    sql: CASE
+         WHEN ${TABLE}.country != 'unknown' THEN ${TABLE}.country
+         ELSE NULL
+       END ;;
   }
 
   dimension: country_code {
