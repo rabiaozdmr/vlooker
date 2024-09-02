@@ -69,7 +69,7 @@ view: tables {
   dimension: country {
     type: string
     map_layer_name: countries
-    drill_fields: [app_name]
+    drill_fields: [app_name,sum_time_spent]
     sql: CASE
          WHEN ${TABLE}.country = 'unknown' THEN NULL
          ELSE ${TABLE}.country
