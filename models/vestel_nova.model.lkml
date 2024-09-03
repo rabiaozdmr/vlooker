@@ -9,7 +9,7 @@ include: "/views/**/*.view.lkml"
 
 datagroup: vestel_nova_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "24 hour"
+  max_cache_age: "1 hour"
 }
 
 persist_with: vestel_nova_default_datagroup
