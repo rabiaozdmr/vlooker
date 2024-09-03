@@ -214,7 +214,7 @@ view: tables {
     sql: ${TABLE}.count ;;
   }
 
-  measure: total_count_ac_set_temperature {
+  measure: total_count_AC_set_temperature {
     type: sum
     sql: ${count_ac_set_temperature} ;;  }
 
