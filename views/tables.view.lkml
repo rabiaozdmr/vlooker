@@ -76,6 +76,16 @@ view: tables {
        END ;;
   }
 
+  dimension: country_name {
+    type: string
+    map_layer_name: countries
+    drill_fields: [app_name,sum_time_spent]
+    sql: CASE
+         WHEN ${TABLE}.country_name = 'unknown' THEN NULL
+         ELSE ${TABLE}.country_name
+       END ;;
+  }
+
   dimension: country_code {
     type: string
     sql: ${TABLE}.country_code ;;
