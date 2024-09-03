@@ -99,7 +99,8 @@ view: tables {
 
   dimension: device_type {
     type: string
-    sql: ${TABLE}.device_type ;;
+    sql: ${TABLE}.device_type
+    label: "Device Type";;
   }
 
   dimension: duration {
