@@ -83,7 +83,7 @@ view: tables {
     sql: CASE
          WHEN ${TABLE}.country_name = 'unknown' THEN NULL
          ELSE ${TABLE}.country_name
-       END ;;
+       END as Country Name ;;
   }
 
   dimension: country_code {
